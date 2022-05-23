@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">UdeaApp</string>
+    <string name="name">Nombre</string>
+    <string name="register_form">Formulario de Registro</string>
+    <string name="last_name">Apellidos</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="register">Registrar</string>
 </resources>
