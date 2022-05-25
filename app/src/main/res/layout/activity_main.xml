@@ -25,6 +25,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -33,13 +34,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo_textView">
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/name_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/name" />
+            android:hint="@string/name"
+            android:textColorHint="#616161" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -57,7 +58,8 @@
             android:id="@+id/last_name_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/last_name" />
+            android:hint="@string/last_name"
+            android:textColorHint="#616161" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -75,7 +77,8 @@
             android:id="@+id/email_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/email" />
+            android:hint="@string/email"
+            android:textColorHint="#616161" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
