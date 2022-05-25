@@ -5,4 +5,8 @@
     <string name="last_name">Apellidos</string>
     <string name="email">Correo Electrónico</string>
     <string name="register">Registrar</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="otherGender">Otro</string>
+    <string name="askGender">Género:</string>
 </resources>
