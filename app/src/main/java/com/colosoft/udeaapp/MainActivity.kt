@@ -19,9 +19,9 @@ class MainActivity : Activity() {
         setContentView(view)
 
         mainBinding.registerButton.setOnClickListener{
-            val name = mainBinding.nameEditText.text.toString()
-            val lastName = mainBinding.lastNameEditText.text.toString()
-            val email = mainBinding.emailEditText.text.toString()
+            val name = mainBinding.nameText.text.toString()
+            val lastName = mainBinding.lastNameText.text.toString()
+            val email = mainBinding.emailText.text.toString()
 
             mainBinding.infoTextView.text = name+"\n"+lastName+"\n"+email
         }
