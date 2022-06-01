@@ -9,4 +9,14 @@
     <string name="female">Mujer</string>
     <string name="otherGender">Otro</string>
     <string name="askGender">Género:</string>
+    <string name="info">"Nombre: %s\nApellidos: %s\nEmail: %s\n "</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="ask_hobbie">Pasatiempos:</string>
+    <string name="exercise">Ejercicio</string>
+    <string name="reading">Lectura</string>
+    <string name="gaming">Videojuegos</string>
+    <string name="traveling">Viajar</string>
+    <string name="birthday">Fecha de nacimiento:</string>
+    <string name="birthday_place">Lugar de nacimiento:</string>
 </resources>

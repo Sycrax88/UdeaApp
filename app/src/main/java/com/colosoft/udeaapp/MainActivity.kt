@@ -1,10 +1,7 @@
 package com.colosoft.udeaapp
 
 import android.app.Activity
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.widget.RadioGroup
 import com.colosoft.udeaapp.databinding.ActivityMainBinding
 
 // TODO: Falta definir algo
@@ -19,13 +16,17 @@ class MainActivity : Activity() {
         val view = mainBinding.root
         setContentView(view)
 
-        mainBinding.registerButton.setOnClickListener{
-            val name = mainBinding.nameText.text.toString()
-            val lastName = mainBinding.lastNameText.text.toString()
-            val email = mainBinding.emailText.text.toString()
+        with(mainBinding) {
+            registerButton.setOnClickListener {
+                val name = nameText.text.toString()
+                val lastName = lastNameText.text.toString()
+                val email = emailText.text.toString()
 
-            mainBinding.infoTextView.text = name+"\n"+lastName+"\n"+email
+                infoTextView.text = getString(R.string.info, name, lastName, email)
+            }
         }
+
+
     }
 }
 
