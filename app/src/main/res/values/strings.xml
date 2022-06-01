@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">UdeaApp</string>
+    <string name="app_name">Registro Udea</string>
     <string name="name">Nombre</string>
     <string name="register_form">Formulario de Registro</string>
     <string name="last_name">Apellidos</string>
@@ -20,4 +20,17 @@
     <string name="birthday">Fecha de nacimiento:</string>
     <string name="birthday_place">Lugar de nacimiento:</string>
     <string name="terms_conditions">Aceptar términos y condiciones</string>
+<string-array name="cities_list">
+    <item>Armenia</item>
+    <item>Barranquilla</item>
+    <item>Bogotá</item>
+    <item>Cali</item>
+    <item>Cartagena</item>
+    <item>Cartago</item>
+    <item>Cúcuta</item>
+    <item>Manizales</item>
+    <item>Medellín</item>
+    <item>Pasto</item>
+    <item>Pereira</item>
+</string-array>
 </resources>
