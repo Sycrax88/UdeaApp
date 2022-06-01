@@ -20,6 +20,7 @@
     <string name="birthday">Fecha de nacimiento:</string>
     <string name="birthday_place">Lugar de nacimiento:</string>
     <string name="terms_conditions">Aceptar términos y condiciones</string>
+    <string name="msg_error">No has introducido todo.</string>
 <string-array name="cities_list">
     <item>Armenia</item>
     <item>Barranquilla</item>
