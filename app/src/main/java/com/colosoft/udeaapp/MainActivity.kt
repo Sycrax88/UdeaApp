@@ -40,11 +40,11 @@ class MainActivity : Activity() {
 
             dateButton.setOnClickListener{
                 DatePickerDialog(this@MainActivity,
-                dateSetListener,
+                    dateSetListener,
                     calendar.get(Calendar.YEAR),
                     calendar.get(Calendar.MONTH),
                     calendar.get(Calendar.DAY_OF_MONTH)
-                    ).show()
+                ).show()
             }
 
 
@@ -56,9 +56,10 @@ class MainActivity : Activity() {
                 val name = nameText.text.toString()
                 val lastName = lastNameText.text.toString()
                 val email = emailText.text.toString()
+
                 val genre = if (radioButtonFemale.isChecked) getString(R.string.female)
                 else if (radioButtonMale.isChecked) getString(R.string.male)
-                else getString(R.string.otherGender)
+            else getString(R.string.otherGender)
 
                 var hobbies =""
                 if (exerciseCheckBox.isChecked) hobbies += getString(R.string.exercise)+" "
@@ -68,7 +69,7 @@ class MainActivity : Activity() {
 
                 val bornCity = birthdayPlaceSpinner.selectedItem.toString()
 
-                infoTextView.text = getString(R.string.info, name, lastName, email)
+                infoTextView.text = getString(R.string.info, name, lastName, email, genre, hobbies, bornDate, bornCity)
             }
         }
 
