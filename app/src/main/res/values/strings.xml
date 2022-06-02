@@ -20,8 +20,10 @@
     <string name="birthday">Fecha de nacimiento:</string>
     <string name="birthday_place">Lugar de nacimiento:</string>
     <string name="terms_conditions">Aceptar términos y condiciones</string>
-    <string name="msg_error">No has introducido todo.</string>
     <string name="date_button_message">dd/mm/aa</string>
+    <string name="missing_fill_message">No has introducido todo</string>
+    <string name="success_message">Los datos son válidos</string>
+    <string name="not_matching_passwords_message">Las contraseñas no coinciden</string>
 <string-array name="cities_list">
     <item>Bogotá</item>
     <item>Cali</item>

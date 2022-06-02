@@ -15,6 +15,7 @@ class MainActivity : Activity() {
 
     private lateinit var mainBinding: ActivityMainBinding
     private var bornDate = ""
+    private var bornDateChanged= false
     private val calendar = Calendar.getInstance()
 
 
@@ -34,6 +35,7 @@ class MainActivity : Activity() {
             val sdf = SimpleDateFormat(format)
             bornDate = sdf.format(calendar.time).toString()
             mainBinding.dateButton.text = bornDate
+            bornDateChanged = true
         }
 
         with(mainBinding) {
@@ -50,16 +52,13 @@ class MainActivity : Activity() {
 
             registerButton.setOnClickListener {
 
-                if (nameText.text.toString().isEmpty())
-                    Toast.makeText(this@MainActivity, getString(R.string.msg_error),Toast.LENGTH_SHORT).show()
-
                 val name = nameText.text.toString()
                 val lastName = lastNameText.text.toString()
                 val email = emailText.text.toString()
 
                 val genre = if (radioButtonFemale.isChecked) getString(R.string.female)
                 else if (radioButtonMale.isChecked) getString(R.string.male)
-            else getString(R.string.otherGender)
+                else getString(R.string.otherGender)
 
                 var hobbies =""
                 if (exerciseCheckBox.isChecked) hobbies += getString(R.string.exercise)+" "
@@ -69,7 +68,22 @@ class MainActivity : Activity() {
 
                 val bornCity = birthdayPlaceSpinner.selectedItem.toString()
 
-                infoTextView.text = getString(R.string.info, name, lastName, email, genre, hobbies, bornDate, bornCity)
+                if (nameText.text.toString().isNotEmpty() && lastNameText.text.toString().isNotEmpty() && emailText.text.toString().isNotEmpty() &&
+                    passwordText.text.toString().isNotEmpty() && confirmPasswordText.text.toString().isNotEmpty() &&
+                    (exerciseCheckBox.isChecked || readingCheckBox.isChecked || gamingCheckBox.isChecked || travelingCheckBox.isChecked) &&
+                        bornDateChanged){
+                    if (passwordText.text.toString() == confirmPasswordText.text.toString()){
+                        infoTextView.text = getString(R.string.info, name, lastName, email, genre, hobbies, bornDate, bornCity)
+                        Toast.makeText(this@MainActivity, getString(R.string.success_message),Toast.LENGTH_SHORT).show()
+                    }
+                    else{
+                        Toast.makeText(this@MainActivity, getString(R.string.not_matching_passwords_message),Toast.LENGTH_SHORT).show()
+                    }
+                }
+                else{
+                    Toast.makeText(this@MainActivity, getString(R.string.missing_fill_message),Toast.LENGTH_SHORT).show()
+                }
+
             }
         }
 
