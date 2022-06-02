@@ -72,12 +72,17 @@ class MainActivity : Activity() {
                     passwordText.text.toString().isNotEmpty() && confirmPasswordText.text.toString().isNotEmpty() &&
                     (exerciseCheckBox.isChecked || readingCheckBox.isChecked || gamingCheckBox.isChecked || travelingCheckBox.isChecked) &&
                         bornDateChanged){
-                    if (passwordText.text.toString() == confirmPasswordText.text.toString()){
-                        infoTextView.text = getString(R.string.info, name, lastName, email, genre, hobbies, bornDate, bornCity)
-                        Toast.makeText(this@MainActivity, getString(R.string.success_message),Toast.LENGTH_SHORT).show()
+                    if (termsSwitch.isChecked){
+                        if (passwordText.text.toString() == confirmPasswordText.text.toString()){
+                            infoTextView.text = getString(R.string.info, name, lastName, email, genre, hobbies, bornDate, bornCity)
+                            Toast.makeText(this@MainActivity, getString(R.string.success_message),Toast.LENGTH_SHORT).show()
+                        }
+                        else{
+                            Toast.makeText(this@MainActivity, getString(R.string.not_matching_passwords_message),Toast.LENGTH_SHORT).show()
+                        }
                     }
                     else{
-                        Toast.makeText(this@MainActivity, getString(R.string.not_matching_passwords_message),Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@MainActivity, getString(R.string.not_checked_terms),Toast.LENGTH_SHORT).show()
                     }
                 }
                 else{

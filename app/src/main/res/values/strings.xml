@@ -24,6 +24,7 @@
     <string name="missing_fill_message">No has introducido todo</string>
     <string name="success_message">Los datos son válidos</string>
     <string name="not_matching_passwords_message">Las contraseñas no coinciden</string>
+    <string name="not_checked_terms">Acepta los términos y condiciones</string>
 <string-array name="cities_list">
     <item>Bogotá</item>
     <item>Cali</item>
