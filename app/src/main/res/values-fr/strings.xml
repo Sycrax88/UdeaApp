@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Formulaire d'inscription Udea</string>
+    <string name="name">Nom</string>
+    <string name="register_form">Formulaire d'inscription</string>
+    <string name="last_name">Nom de Famille</string>
+    <string name="email">E-mail</string>
+    <string name="register">S'inscrire</string>
+    <string name="male">Masculin</string>
+    <string name="female">Femelle</string>
+    <string name="otherGender">Autre</string>
+    <string name="askGender">Genre:</string>
+    <string name="info">"Nom: %s\nNom de Famille: %s\nE-mail: %s\nGenre: %s\nPasse-temps: %s\nDate de Naissance: %s\nLieu de Naissance: %s"</string>
+    <string name="password">Le Mot de Passe</string>
+    <string name="confirm_password">Confirmez le Mot de Passe</string>
+    <string name="ask_hobbie">Passe-temps:</string>
+    <string name="exercise">Exercer</string>
+    <string name="reading">En lisant</string>
+    <string name="gaming">Jeux</string>
+    <string name="traveling">En voyageant</string>
+    <string name="birthday">Date de Naissance:</string>
+    <string name="birthday_place">Lieu de Naissance:</string>
+    <string name="terms_conditions">Accepter les termes et conditions</string>
+    <string name="date_button_message">jj/mm/aa</string>
+    <string name="missing_fill_message">Vous n'avez pas tout saisi</string>
+    <string name="success_message">Les données sont valides</string>
+    <string name="not_matching_passwords_message">Les mots de passe ne correspondent pas</string>
+    <string name="not_checked_terms">Accepter les termes et conditions</string>
+    <string-array name="cities_list">
+        <item>Bogotá</item>
+        <item>Cali</item>
+        <item>Cartago</item>
+        <item>Medellín</item>
+        <item>Pereira</item>
+    </string-array>
+</resources>

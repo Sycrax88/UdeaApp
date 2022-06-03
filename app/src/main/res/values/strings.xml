@@ -9,7 +9,7 @@
     <string name="female">Mujer</string>
     <string name="otherGender">Otro</string>
     <string name="askGender">Género:</string>
-    <string name="info">"Nombre: %s\nApellidos: %s\nEmail: %s\nGénero: %s\nPasatiempos: %s\nFecha de nacimiento: %s\nLugar de Nacimiento %s"</string>
+    <string name="info">"Nombre: %s\nApellidos: %s\nEmail: %s\nGénero: %s\nPasatiempos: %s\nFecha de nacimiento: %s\nLugar de Nacimiento: %s"</string>
     <string name="password">Contraseña</string>
     <string name="confirm_password">Confirmar contraseña</string>
     <string name="ask_hobbie">Pasatiempos:</string>
